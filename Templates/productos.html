@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+{% block ContenidoQueCambia %}
+<h1>Nuestros productos:</h1>
+<br>
+{% for p in productos %}
+    • <b>Nombre: {{p.nombre}}</b><br>
+    • Variedad:{{p.variedad}}<br>
+    • Contenido en ml:{{p.contenido_ml}}<br>
+    • Codigo:{{p.codigo}}<br>
+{% endfor %}
+{% endblock %}
