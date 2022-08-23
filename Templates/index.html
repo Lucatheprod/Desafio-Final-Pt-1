@@ -25,7 +25,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">That Beer 🍻 - La cerveza que buscas 😉​ </a>  
+                <a class="navbar-brand" href="{% url 'AppThatBeerInicio' %}">That Beer 🍻 - La cerveza que buscas 😉​ </a>  
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
@@ -34,8 +34,8 @@
                         <li class="nav-item"><a class="nav-link" href="{% url 'AppThatBeerDistribuidores' %}">Distribuidores</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'AppThatBeerClientes' %}">Clientes</a></li>
                         <li class="nav-item"><a class="nav-link" href="#patrocinadores">Patrocinadores</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">Noticias</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Sobre Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'AppThatBeerNoticias' %}">Noticias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'AppThatBeerAboutUs' %}">Sobre Nosotros</a></li>
 
                     </ul>
                 </div>
@@ -51,7 +51,7 @@
                     </div>
                     <div class="col-lg-8 align-self-baseline">
                         <p class="text-white-75 mb-5">Desde 1981 fabricando la mejor cerveza bajo los estándares más altos de calidad de todo el mercado</p>
-                        <a class="btn btn-primary btn-xl" href="#about">¡CONOCE MÁS!</a>
+                        <a class="btn btn-primary btn-xl" href="{% url 'AppThatBeerProductos' %}">¡CONOCE NUESTROS PRODUCTOS!</a>
                     </div>
                 </div>
             </div>
@@ -122,10 +122,10 @@
         <section class="page-section bg-dark text-white" id = "patrocinadores">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mb-4">Nuestros patrocinadores:</h2>
-                <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">PATAGONIA</a>
-                <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">MILLER</a>
-                <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">YPF</a>
-                <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">MONSTER ENERGY</a>
+                <a class="btn btn-light btn-xl" href="https://www.cervezapatagonia.com.ar/">PATAGONIA</a>
+                <a class="btn btn-light btn-xl" href="https://www.millergenuinedraft.com/">MILLER</a>
+                <a class="btn btn-light btn-xl" href="https://www.ypf.com/Paginas/home.aspx">YPF</a>
+                <a class="btn btn-light btn-xl" href="https://www.monsterenergy.com/es/es/products/monster-energy">MONSTER ENERGY</a>
             </div>
         </section>
         <!-- Contact-->
