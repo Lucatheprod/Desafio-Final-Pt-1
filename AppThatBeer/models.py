@@ -23,6 +23,7 @@ class Producto(models.Model):
     variedad = models.CharField(max_length=20)
     contenido_ml = models.IntegerField()
     codigo = models.CharField(max_length=10)
+    descripcion = models.CharField(max_length=150)
 
 class Patrocinador(models.Model):
     nombre= models.CharField(max_length=15)
